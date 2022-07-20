@@ -6,6 +6,8 @@ import SurveyManager from '@/components/SurveyManger.vue'
 import AddSurvey from '@/components/AddSurvey.vue'
 import UserSurvey from '@/components/UserSurvey.vue'
 import SurveyQuestion from '@/components/SurveyQuestion.vue'
+import EditSurveyQuestion from '@/components/EditSurveyQuestion.vue'
+import SubmitAnswer from '@/components/SubmitAnswer.vue'
 const routes =  [
   {
     path: '/test/:id',
@@ -48,6 +50,17 @@ const routes =  [
     path: '/view-question/:id',
     name: 'survey-specific-question-details',
     component: SurveyQuestion
+  },
+   //edit questions...
+   {
+    path: '/edit-this-survey/:id',
+    name: 'survey-edit-specific-question',
+    component: EditSurveyQuestion
+  },
+  {
+    path: '/survey-feed/:id',
+    name: 'survey-feed-specific-survey',
+    component: SubmitAnswer
   }
 ];
 const router = createRouter({
