@@ -3,12 +3,12 @@ import axios from "axios";
 var baseurl = "";
 if (process.env.NODE_ENV === "development") {
   //local
- // baseurl = "http://localhost:3000/";
- // remote - http://34.227.74.196:3000
+  //baseurl = "http://localhost:3000/";
+  //remote - http://34.227.74.196:3000
    baseurl = "http://34.227.74.196:3000/";
 } else {
   //local
- // baseurl = "http://localhost:3000/";
+  //baseurl = "http://localhost:3000/";
   //remote - http://34.227.74.196:3000
    baseurl = "http://34.227.74.196:3000/";
 
